@@ -1,0 +1,88 @@
+{% extends 'partials/base.html' %}
+{% block title %} product page {% endblock %}
+{% block content%}
+{% include 'partials/topnav.html' %}
+<div class="container">
+    <div class="row my-5">
+        <div class="col-md-4">
+            <div class="border bg-white p-3 shadow">
+                <h4>Add product</h4>
+                <hr>
+                <form action="">
+                    <div class="form-group m-3">
+                        <label for="exampleinputname">Name*</label><br/>
+                        <input type="text" name="exampleinputname" id="exampleinputname">
+                    </div>
+                    <div class="form--group m-3">
+                        <label for="quantity">Quantity*</label><br/>
+                        <input type="text" name="quantity" id="quantity">
+
+                    </div>
+                    <div class="form-group m-3">
+                        <label for="category">category*</label><br/>
+                        <input type="text" name="category" id="category">
+                    </div> 
+
+                    <input class="btn btn-success " type="submit" value="Add product">
+
+                </form>
+            </div>
+            
+        
+        </div>
+
+       
+        <div class="col-md-8">
+
+            <table class="table bg-white m-5 shadow ">
+                <thead class="bg-info" >
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Quantity</th>
+                        <th scope="col">Category</th>
+                        <th scope="col">Activity</th>
+                        <th scope="col">description</th>
+                        
+                    </tr>
+
+                </thead>
+                <tbody >
+                    <tr>
+                        <td scope="row">1</td>
+                        <td>Hp Laptop</td>
+                        <td>100</td>
+                        <td>Electronics</td>
+                        <td><button class="btn btn-success btn-sm ">edit</button>
+                            <button class="btn btn-danger btn-sm ">Delete</button>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td scope="row">2</td>
+                        <td>Toshiba</td>
+                        <td>60</td>
+                        <td>Electronics</td>
+                        <td><button class="btn btn-success btn-sm ">edit</button>
+                            <button class="btn btn-danger btn-sm ">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row">1</td>
+                        <td>Mac Laptop</td>
+                        <td>80</td>
+                        <td>Electronics</td>
+                        <td><button class="btn btn-success btn-sm ">edit</button>
+                            <button class="btn btn-danger btn-sm ">Delete</button>
+                    </tr>
+                </tbody>
+
+            </table>
+        
+        </div>
+
+    </div>
+</div>
+
+
+{% endblock%}

@@ -1,0 +1,41 @@
+{% extends 'partials/base.html' %}
+{% block title %} order page {% endblock %}
+{% block content%}
+{% include 'partials/topnav.html' %}
+<div class="container">
+    <div class="row my-5">
+        <div class="col-md-4"></div>
+        <div class="col-md-8">
+            <table class="table bg-white shadow">
+                <thead class="bg-info">
+                    <tr>
+                        <th>Product</th>
+                        <th>Category</th>
+                        <th>Quantity</th>
+                        <th>Ordered by</th>
+                        <th>status</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Toshiba pendrive </td>
+                        <td>Electronics</td>
+                        <td>1</td>
+                        <td>Grace</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Hp laptop</td>
+                        <td>Electronics</td>
+                        <td>3</td>
+                        <td>Ken</td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends 'partials/base.html' %}
+{%block title%}login page{%endblock%}
+
+{%block content%}  
+
+<div class="container">
+    <div class="row mt-5 ">
+        <div class="col-md-6">
+            <div class="border p-3 bg-white shadow offset-md-3 ">
+                <h3>Login page</h3>
+                <hr>
+                <form  method="post">
+                    {%csrf_token%}
+                    {{ form }}
+                    <input class="btn btn-success" type="submit" value="Login ">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+{% endblock %}

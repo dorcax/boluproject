@@ -1,0 +1,73 @@
+<div class="container">
+    <div class="row mt-4">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    make Request
+                </div>
+                
+                <div class="card-body">
+                
+                    <form  method="post">
+                        {% csrf_token %}
+                        {{form}}
+                        <input class="btn  btn-success" type="submit" value="make request">
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-8">
+            <div class="card">
+            <div class="card-hearder">Orders Records</div>
+<div class="card-body">
+            <table class="table bg-white m-5 shadow ">
+                <thead class="bg-info" >
+                    <tr>
+                        
+                        <th scope="col">Name</th>
+                        <th scope="col">Quantity</th>
+                        <th scope="col">Category</th>
+                        <th scope="col">Activity</th>
+                        <th scope="col">description</th>
+                        
+                    </tr>
+
+                </thead>
+                <tbody >
+                    <tr>
+                        
+                        <td>book</td>
+                        <td>stationary</td>
+                        <td>10</td>
+                      
+
+                    </tr>
+                    <tr>
+                        
+                        <td>book</td>
+                        <td>stationary</td>
+                        <td>10</td>
+                      
+                       
+                    </tr>
+                    <tr>
+                        <td>book</td>
+                        <td>stationary</td>
+                        <td>10</td>
+                    
+                    </tr>
+                </tbody>
+
+            </table>
+        
+        </div>
+
+    </div>
+</div>
+
+
+</div>
+</div>
+    </div>
+</div>

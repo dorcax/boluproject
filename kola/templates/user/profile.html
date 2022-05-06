@@ -1,0 +1,54 @@
+{% extends 'partials/base.html' %}
+{% block title %} profile page {% endblock %}
+{% block content%}
+
+
+
+    
+                    <div class="container">
+                        <div class="row my-5">
+                            <div class="col-md-4"></div>
+                            <div class="col-md-8">
+                                <div class="card">
+                                    <div class="card-header bg-info text-white ">
+                                        profile page
+                                    </div>
+                                    <div class="card-body shadow">
+                                        <div class="row">
+                                            <div class="col-md-8">
+                                                <span class="display-6 text-dark">profile information</span><a  class ="btn btn-success btn-sm float-right" href="">Edit</a>
+                                                <hr>
+                                                <table class="table text-dark table-borderless  ">
+                                                    <tbody>
+                                                        <tr>
+                                                            <th scope="row">Name</th>
+                                                            <td>{{user.username}}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">E-mail </th>
+                                                            <td>{{user.email}}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Addresss</th>
+                                                            <td>{{user.profile.address}}</td>
+                                                        </tr>
+                                                    </tbody>
+                    
+                                                    
+                                                </table>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <img  class="img-thumbnail" src="{{ user.profile.image.url}}" alt="dorcas picture">
+                                            </div>
+                                            
+                                        </div>
+                    
+                                    </div>
+                                </div>
+                            </div>
+                    
+                        </div>
+                    </div>
+                    
+
+{% endblock %}
